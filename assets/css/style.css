@@ -249,8 +249,8 @@ header .navbar ul li a:hover {
 .about .row .skills .box{
 
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     padding: 2rem;
     background:#222;
     display: flex;
@@ -359,10 +359,14 @@ header .navbar ul li a:hover {
 
 .number h3 {
     font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 2px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     text-transform: uppercase;
     color:#fff;
+    text-align: center; /* Center align the text */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    max-width: 100%; /* Ensure the text wraps within the circle */
 }
 
 /* Decoration for Education starts here */
