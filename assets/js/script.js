@@ -1,10 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Toggle Nav bar
+    // Get the menu and navbar elements
     const menu = document.getElementById('menu');
     const navbar = document.getElementById('navbar');
 
-    menu.addEventListener('click', function() {
+    // Toggle the navbar when the menu icon is clicked
+    menu.addEventListener('click', () => {
         navbar.classList.toggle('active');
+    });
+
+    // Hide the navbar when a navigation link is clicked (for smaller screens)
+    const navLinks = navbar.querySelectorAll('a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+        });
     });
 
     // Typing Animation
