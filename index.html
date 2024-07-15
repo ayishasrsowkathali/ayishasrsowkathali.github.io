@@ -4,13 +4,15 @@
     <meta charset = "UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name = "viewport" content="width=device-width, initial-scale=1">
-    <title>Ayisha Sowkathali</title>
+    <title>AyishaSR_Sowkathali</title>
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- script.js file link -->
+    <script defer src="assets/js/script.js"></script>
 
 </head>
 <body>
@@ -22,10 +24,9 @@
     <div class = "user">
         <img src = "assets/img/profileImg.jpg" alt="">
         <h3 class = "name"> Ayisha S R Sowkathali </h3>
-        <p class="post"> UI/UX Designer </p>
     </div>
 
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
         <ul>
             <li><a href="#home"> Home </a></li>
             <li><a href="#about"> About </a></li>
@@ -35,24 +36,27 @@
         </ul>
     </nav>
 
+    <!-- Hamburger Menu Icon -->
+    <div id="menu" class="fas fa-bars"></div>
+
 </header>
 
 <!-- header section ends -->
-
-<div id="menu" class="fas fa-bars">
-
-</div>
 
 <!-- Home section start here -->
 
 <section class="home" id="home">
 
     <h3>HI THERE !</h3>
-    <h1>I'M <span>Ayisha Shihara Riham Sowkathali </span></h1>
+    <!-- <h1>I'M <span>Ayisha Shihara Riham Sowkathali </span></h1> -->
+    <h1 class="typing-container">
+        <span class="static-text">I'M </span>
+        <span id="typed-text"></span>
+        <span class="cursor">&nbsp;</span>
+    </h1>
     <p> I'm a passionate UI/UX designer and can
-    bring innovative ideas & concepts to life for client-based design projects. I have 2+ years of experience in designing intuitive
-    and visually appealing user with cross-functional teams to deliver user-centred
-    designs that enhance user experiences.
+    bring innovative ideas & concepts to life for client-based design projects. I have 2+ years of experience in designing intuitive and visually appealing user with cross-functional teams to deliver user-centred
+    designs that enhance user experiences. I also have basic knowledge in web designing and front-end development.
     </p>
     <a href="#about"> <button class="btn"> about me <i class="fas fa-user">
 
@@ -283,6 +287,7 @@
             <h3 class="title">contact info</h3>
     
             <div class="info">
+                <h3> <i class="fas fa-user"></i> Ayisha Shihara Riham Sowkathali </h3>
                 <h3> <i class="fas fa-envelope"></i> ayishasr.sowkathali@gmail.com </h3>
                 <h3> <i class="fas fa-phone"></i> +61 406 938 549 </h3>
                 <h3> <i class="fa-brands fa-linkedin"></i> linkedin.com/in/ayishasowkathali </h3>
@@ -307,9 +312,6 @@
         </form>
     
     </div>
-
-    <!-- script.js file link -->
-    <script src="assets/js/script.js"></script>
     
     </section>
 </body>

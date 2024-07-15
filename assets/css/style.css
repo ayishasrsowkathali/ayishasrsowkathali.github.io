@@ -112,11 +112,6 @@ header .user .name {
     white-space: nowrap;
 }
 
-header .user .post {
-    font-size: 2rem;
-    color: #eee;
-}
-
 header .navbar {
     width: 100%;
 }
@@ -142,8 +137,9 @@ header .navbar ul li a:hover {
 
 #menu {
     position: fixed;
-    top: 2rem; right: 2rem;
-    background: #333;
+    top: 2rem; 
+    right: 2rem;
+/*    background: #333;*/
     color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
@@ -151,6 +147,27 @@ header .navbar ul li a:hover {
     z-index: 1000;
     /* display: none; */
 }
+
+/* Show the menu icon and hide the navbar on smaller screens */
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+    #navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        background: #1a1a1a;
+    }
+    #navbar.active {
+        display: flex;
+    }
+}
+
 
 /* decoration for home starts here */
 
@@ -171,16 +188,40 @@ header .navbar ul li a:hover {
     color:#fff;
 }
 
-.home h1 span{
-    color:var(--yellow);
-}
-
 .home p{
     font-size:2rem;
     color:#eee;
     padding: 1rem 0;
 }
 
+.typing-container {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.static-text {
+    color: white;
+}
+
+#typed-text {
+    color:var(--yellow);
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    background-color: var(--yellow);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
 /* decoration for home ends here */
 
 /* decoration for abour starts here */
