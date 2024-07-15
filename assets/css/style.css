@@ -149,7 +149,7 @@ header .navbar ul li a:hover {
 }
 
 /* Show the menu icon and hide the navbar on smaller screens */
-@media (max-width: 800px) {
+@media (max-width: 991px) {
     .navbar {
         display: none;
         flex-direction: column;
@@ -173,7 +173,7 @@ header .navbar ul li a:hover {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
     /* Hide the navbar by default */
     header .navbar {
         display: none;
